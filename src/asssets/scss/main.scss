@@ -9,16 +9,24 @@
 @import "../node_modules/bulma/sass/elements/button.sass";
 @import "../node_modules/bulma/sass/elements/container.sass";
 @import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/elements/box.sass";
+@import "../node_modules/bulma/sass/elements/icon.sass";
 @import "../node_modules/bulma/sass/form/_all.sass";
 @import "../node_modules/bulma/sass/components/navbar.sass";
 @import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
-
+@import "../node_modules/bulma/sass/grid/_all.sass";
 // Required Core Stylesheet
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 
 // Optional Theme Stylesheet
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
+/*
+  pages
+
+*/
+@import "landing";
 
 body {
   font-family: $main-font;
@@ -30,202 +38,41 @@ body {
   color: $secondary;
 }
 
-.header {
-  &__hero {
-    background: $secondary;
-    height: 80vh;
-    width: 100vw;
-    margin-top: 100px;
-    display: flex;
-    color: $white;
-    flex-direction: row;
-    justify-content: center;
-    &__left {
-      flex: 50%;
-      height: 100&;
-      display: flex;
-      text-align: left;
-      align-items: center;
-      justify-content: center;
-      &__content {
-        max-width: 650px;
-        > * {
-          margin: 30px 0px !important;
-        }
-        h1 {
-          padding: 10px 0px;
-          font-size: 5.2rem;
-          line-height: 4.2rem;
-          font-family: $header-font;
-        }
+.contact {
+  margin: 50px 0;
+  &__form_contact {
+    max-width: 600px;
+    flex: 60%;
+    margin: 0 30px;
+    margin: 50px 0;
+    display: block;
+    padding: 40px !important;
+    // spacing in checkboxes
+    .field {
+      .checkbox {
+        margin: 4px 0;
       }
-    }
-    &__right {
-      flex: 50%;
-      background: white;
-      &__image {
-        overflow: hidden;
-        height: 100%;
-        position: relative;
-        img {
-          right: 180px;
-          object-fit: cover;
-          width: 100%;
-        }
-      }
-    }
-  }
-}
-
-.navbar {
-  background: white;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 20px 0;
-  margin: 0 auto;
-
-  &__menu {
-    display: flex;
-    flex-direction: row;
-    li {
-      a {
-        color: $secondary;
-      }
-      margin: 10px 10px;
     }
   }
   .container {
     display: flex;
-    justify-content: space-between;
-  }
-}
-.social {
-  position: fixed;
-  top: 120px;
-  right: 0;
-  z-index: 1000;
-  display: flex;
-  flex-direction: column;
-  background-color: $primary;
-  padding: 20px 20px;
-  &__icon {
-    color: white;
-    padding: 10px;
-    i {
-      font-size: 25px;
-    }
-  }
-}
-
-.services_resume {
-  margin: 100px 0;
-  // this is a container for all services
-  &__services {
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: center;
-    .item {
-      margin: 10px 25px;
-      background-color: $secondary;
-      width: 200px;
-      height: 250px;
-      padding: 50px 10px;
-      color: $white;
-      display: flex;
-      cursor: pointer;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      transition: transform 0.2s ease;
-      &:hover {
-        background: $primary;
-        transform: scale(1.1) translateY(-10px);
-      }
-      &__icon {
-        padding: 10px;
-        i {
-          font-size: 30px;
-        }
-      }
-      p {
-        font-weight: 500;
-        max-width: 250px;
-      }
-      text-align: center;
-    }
-  }
-}
-
-.about {
-  text-align: center;
-  display: flex;
-  margin: 50px 0;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  > * {
-    max-width: 650px;
-    display: block;
-    margin: 8px 0;
-  }
-}
-
-.services {
-  margin: 80px 0;
-  h2 {
-    text-align: center;
-  }
-
-  &__item {
-    margin-top: 50px;
-    margin-bottom: 35px;
-    padding: 45px 0;
-    display: flex;
-    justify-content: center;
     flex-direction: row;
+  }
+  &__extract {
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    > * {
-      margin: 0 20px;
-    }
-    &__left {
-      max-width: 500px;
+    &__content {
+      max-width: 450px;
+      text-align: center;
       > * {
         margin: 10px 0;
       }
-    }
-    &__right {
-      max-width: 500px;
-
       img {
-        width: 100%;
+        width: 150px;
       }
-    }
-  }
-}
-
-.footer {
-  padding: 30px 0;
-  .container {
-    display: flex;
-    justify-content: space-between;
-  }
-  &__info {
-    h2 {
-      @extend .subtitle;
-      font-size: 2rem;
-      font-style: italic;
-    }
-  }
-  &__copy {
-    color: $secondary;
-    width: 100%;
-    display: block;
-    text-align: center;
-    padding: 20px 0;
-    b {
-      font-weight: 600;
-      text-align: center;
     }
   }
 }
