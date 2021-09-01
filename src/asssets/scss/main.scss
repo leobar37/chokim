@@ -14,6 +14,12 @@
 @import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
 
+// Required Core Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+// Optional Theme Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
 body {
   font-family: $main-font;
   font-size: 16px;
@@ -26,16 +32,16 @@ body {
 
 .header {
   &__hero {
-    background: white;
-    height: 650px;
+    background: $secondary;
+    height: 80vh;
     width: 100vw;
     margin-top: 100px;
     display: flex;
-    color: $secondary;
+    color: $white;
     flex-direction: row;
     justify-content: center;
     &__left {
-      flex: 60%;
+      flex: 50%;
       height: 100&;
       display: flex;
       text-align: left;
@@ -44,19 +50,18 @@ body {
       &__content {
         max-width: 650px;
         > * {
-          margin: 15px 0px !important;
+          margin: 30px 0px !important;
         }
         h1 {
           padding: 10px 0px;
-          font-weight: 700;
-          font-style: italic;
-          font-size: 4rem;
+          font-size: 5.2rem;
           line-height: 4.2rem;
+          font-family: $header-font;
         }
       }
     }
     &__right {
-      flex: 40%;
+      flex: 50%;
       background: white;
       &__image {
         overflow: hidden;
@@ -109,6 +114,45 @@ body {
     padding: 10px;
     i {
       font-size: 25px;
+    }
+  }
+}
+
+.services_resume {
+  margin: 100px 0;
+  // this is a container for all services
+  &__services {
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: center;
+    .item {
+      margin: 10px 25px;
+      background-color: $secondary;
+      width: 200px;
+      height: 250px;
+      padding: 50px 10px;
+      color: $white;
+      display: flex;
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transition: transform 0.2s ease;
+      &:hover {
+        background: $primary;
+        transform: scale(1.1) translateY(-10px);
+      }
+      &__icon {
+        padding: 10px;
+        i {
+          font-size: 30px;
+        }
+      }
+      p {
+        font-weight: 500;
+        max-width: 250px;
+      }
+      text-align: center;
     }
   }
 }

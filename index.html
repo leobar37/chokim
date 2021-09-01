@@ -8,7 +8,7 @@
   <title></title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
+  <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -67,21 +67,57 @@
             <button class="button is-primary">
               Contactar
             </button>
-            <button class="button is-outlined">
-              servicios
-            </button>
           </div>
         </div>
       </div>
       <div class="header__hero__right">
         <div class="header__hero__right__image">
-          <img src="./src/asssets/img/hero.png" alt="">
+          <img src="./src/asssets/img/hero_1.png" alt="">
         </div>
       </div>
     </div>
   </header>
 
   <main>
+    <!-- services resume -->
+    <section class="container">
+      <div class="services_resume">
+        <h2 class="subtitle has-text-centered">Servicios</h2>
+        <div class="services_resume__services glide">
+          <div class="glide__track" data-glide-el="track">
+            <div class="glide__slides">
+              <div class="item glide__slide">
+                <div class="item__icon">
+                  <i class="fas fa-desktop"></i>
+                </div>
+                <p>
+                  Reparación y mantenimiento
+                  de computadoras
+                </p>
+              </div>
+              <div class="item glide__slide">
+                <div class="item__icon">
+                  <i class="fas fa-search-location"></i>
+                </div>
+                <p>
+                  Creación de paginas web
+                </p>
+              </div>
+              <div class="item glide__slide">
+                <div class="item__icon">
+                  <i class="fas fa-satellite-dish"></i>
+                </div>
+                <p>
+                  Instalación de cable satelitas Direct tv, Claro Movistar
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  About chokim -->
     <section class="container is-flex-direction-row is-justify-content-center">
       <div class="about">
         <h2 class="subtitle">Sobre Chokim
@@ -99,35 +135,11 @@
         </div>
       </div>
     </section>
+
     <section class="services">
       <div class="container">
-        <h2 class="subtitle has-text-centered">
-          Servicios
-        </h2>
-        <article class="services__item ">
-          <div class="services__item__left">
-            <h3 class="subtitle is-italic">
-              Convierte tu negocio en un agente
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet, consect etur adipiscing elit ut aliquam, purus sit amet luctus venenatis
-            </p>
-            <ul>
-              <li>
-                Agente <b class="has-text-weight-bold">KASNET</b>
-              </li>
-              <li>
-                Agente <b class="has-text-weight-bold">MULTIRED</b>
-              </li>
-            </ul>
-            <button class="is-primary button">
-              Contactar
-            </button>
-          </div>
-          <div class="services__item__right">
-            <img src="./src/asssets/img/bcp.png" alt="">
-          </div>
-        </article>
+
+
         <!-- laptops services -->
         <article class="services__item ">
 
@@ -165,6 +177,25 @@
           </div>
           <div class="services__item__right">
             <img src="./src/asssets/img/wifi.png" alt="">
+          </div>
+        </article>
+        <!-- Intalation -->
+        <article class="services__item ">
+          <div class="services__item__right">
+            <img src="./src/asssets/img/satellite.png" alt="">
+          </div>
+          <div class="services__item__left">
+            <h3 class="subtitle is-italic">
+              Instalación de Cable satelital
+            </h3>
+            <p>
+              Brindamos el servicio de instalación de distintos proveedores de cable satelital; Movistas , Claro ,
+              Direct Tv
+            </p>
+
+            <button class="is-primary button">
+              Contactar
+            </button>
           </div>
         </article>
       </div>
