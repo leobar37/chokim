@@ -1,0 +1,102 @@
+@import "variables";
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/helpers/_all.sass";
+
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "./vendors/main.scss";
+
+body {
+  background-color: $secondary;
+  color: $white;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $main-font;
+  font-size: 18px;
+  overflow: hidden;
+  @include layout-bp(lt-md) {
+    font-size: 17px;
+  }
+  @include layout-bp(lt-sm) {
+    font-size: 14px !important;
+    height: auto;
+  }
+}
+
+.contact__page {
+  .logo {
+    position: fixed;
+    left: 30px;
+    top: 25px;
+    img {
+      width: 110px;
+    }
+  }
+  @include layout-bp(lt-sm) {
+    .logo {
+      img {
+        width: 70px;
+      }
+    }
+  }
+}
+.anun {
+  color: $white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 750px;
+  text-align: center;
+
+  @include layout-bp(lt-md) {
+    max-width: 600px;
+    padding: 20px;
+    &__image {
+      img {
+        width: 450px;
+      }
+    }
+  }
+
+  @include layout-bp(lt-md) {
+    &__title {
+      font-size: 3.3rem !important;
+    }
+  }
+
+  @include layout-bp(lt-sm) {
+    margin-top: 4rem;
+    padding: 20px;
+    &__title {
+      font-size: 2.2rem !important;
+      line-height: 2.3rem !important;
+    }
+    &__image {
+      img {
+        width: 450px;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 4rem;
+    font-family: $header-font;
+    line-height: 3.7rem;
+  }
+  p {
+    margin: 20px 0;
+  }
+  &__contact {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    @include layout-bp(lt-md) {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- hero -->
+    <header class="header">
+        <!-- navbar -->
+        <nav class="navbar">
+            <!-- logo -->
+            <div class="container">
+                <a href="/" class="navbar__logo">
+                    <img width="90" src="./src/asssets/img/log.png" alt="">
+                </a>
+                <ul class="navbar__menu">
+                    <li>
+                        <a href="">
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Sobre nosotros
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Servicios
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <div class="header__hero">
+            <div class="header__hero__left">
+                <div class="header__hero__left__content">
+                    <h1>
+                        Contacto
+                    </h1>
+
+                </div>
+            </div>
+            <div class="header__hero__right">
+                <div class="header__hero__right__image">
+                    <img src="./src/asssets/img/hero_1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact">
+            <div class="container">
+                <form action="" class="contact__form_contact box">
+                    <!-- form contact -->
+                    <div class="columns">
+                        <div class="field column">
+                            <label class="label">Nombres:</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Nombres">
+                            </div>
+                        </div>
+                        <div class="field column">
+                            <label class="label">Apellidos</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Apellidos">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Correo</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input" type="email" placeholder="Correo Electronico" value="">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                        </div>
+                    </div>
+
+
+                    <div class="field">
+                        <label class="label">Celular:</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input" type="email" placeholder="Celular" value="">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-phone-alt"></i>
+                            </span>
+                        </div>
+                    </div>
+
+
+                    <div class="field">
+                        <label class="label">Servicios</label>
+                        <div class="control is-flex is-flex-direction-column">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Servicio de cable
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Consultoria
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Página web
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Mensaje:</label>
+                        <div class="control">
+                            <textarea class="textarea" placeholder="Mensaje"></textarea>
+                        </div>
+                    </div>
+                    <div class="field is-grouped">
+                        <div class="control">
+                            <button class="button is-primary">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="contact__extract">
+                    <div class="contact__extract__content">
+                        <img src="./src/asssets/img/log.png" alt="">
+                        <p>
+                            No dudes en contactarnos, no podremos en contacto lo mas pronto
+                            posible, para más información visista nuestras redes sociales
+                        </p>
+                        <b>
+                            9253222144
+                        </b>
+                        <div class="social is-primary plane">
+                            <a href="" class="social__icon is-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="social__icon is-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="" class="social__icon is-link">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <script type="module" src="./src/main.ts"></script>
+</body>
+
+
+</html>
