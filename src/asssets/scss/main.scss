@@ -40,9 +40,11 @@ body {
 
 .contact {
   margin: 50px 0;
+
   &__form_contact {
     max-width: 600px;
     flex: 60%;
+
     margin: 0 30px;
     margin: 50px 0;
     display: block;
@@ -57,6 +59,9 @@ body {
   .container {
     display: flex;
     flex-direction: row;
+    @include layout-bp(lt-sm) {
+      flex-direction: column;
+    }
   }
   &__extract {
     flex: 40%;

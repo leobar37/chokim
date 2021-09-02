@@ -3,15 +3,15 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/svg+xml+x-icon" href="./log.ico" />
+  <title>Chokim</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title></title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="principal">
   <!-- Social media -->
   <div class="social is-primary">
     <a href="" class="social__icon is-link">
@@ -49,12 +49,12 @@
               </a>
             </li>
             <li>
-              <a href="">
+              <a data-scroll href="#about">
                 Sobre nosotros
               </a>
             </li>
             <li>
-              <a href="">
+              <a data-scroll href="#services">
                 Servicios
               </a>
             </li>
@@ -64,7 +64,7 @@
     </nav>
     <div class="header__hero">
       <div class="header__hero__left">
-        <div class="header__hero__left__content">
+        <div class="header__hero__left__content" data-aos="fade-right">
           <h1>
             Digitaliza tu negocio
             Y vende más
@@ -74,7 +74,7 @@
             ganancia
           </p>
           <div class="buttons">
-            <a href="contact.html" class="button is-primary">
+            <a href="./contact.html" class="button is-primary">
               Contactar
             </a>
           </div>
@@ -87,15 +87,15 @@
       </div>
     </div>
   </header>
-  <main class="hide">
+  <main>
     <!-- services resume -->
-    <section class="container">
-      <div class="services_resume">
+    <section id="services" class="container">
+      <div class="services_resume" data-aos="zoom-in">
         <h2 class="subtitle has-text-centered">Servicios</h2>
         <div class="services_resume__services glide">
           <div class="glide__track" data-glide-el="track">
             <div class="glide__slides">
-              <div class="item glide__slide">
+              <a class="item glide__slide" href="#reparation_service">
                 <div class="item__icon">
                   <i class="fas fa-desktop"></i>
                 </div>
@@ -103,39 +103,38 @@
                   Reparación y mantenimiento
                   de computadoras
                 </p>
-              </div>
-              <div class="item glide__slide">
+              </a>
+              <a href="#web_design" class="item glide__slide">
                 <div class="item__icon">
                   <i class="fas fa-search-location"></i>
                 </div>
                 <p>
                   Creación de paginas web
                 </p>
-              </div>
-              <div class="item glide__slide">
+              </a>
+              <a href="#satellite" class="item glide__slide">
                 <div class="item__icon">
                   <i class="fas fa-satellite-dish"></i>
                 </div>
                 <p>
                   Instalación de cable satelitas Direct tv, Claro Movistar
                 </p>
-              </div>
-              <div class="item glide__slide">
+              </a>
+              <a href="#wifi" class="item glide__slide">
                 <div class="item__icon">
                   <i class="fas fa-wifi"></i>
                 </div>
                 <p>
                   WIFI-HOTSPOT
                 </p>
-              </div>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-
     <!--  About chokim -->
-    <section class="container is-flex-direction-row is-justify-content-center">
+    <section id="about" data-aos="zoom-out-up" class="container is-flex-direction-row is-justify-content-center">
       <div class="about">
         <h2 class="subtitle">Sobre Chokim
         </h2>
@@ -151,20 +150,18 @@
           </button>
         </div>
       </div>
-
     </section>
 
     <section class="services">
       <div class="container">
 
-
         <!-- laptops services -->
-        <article class="services__item ">
+        <article class="services__item " data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
 
           <div class="services__item__right">
-            <img src="./src/asssets/img/laptop.png" alt="">
+            <img src=" ./src/asssets/img/laptop.png" alt="">
           </div>
-          <div class="services__item__left">
+          <div class="services__item__left" id="reparation_service">
             <h3 class="subtitle is-italic">
               ¿Problemas con tu pc o laptop?
             </h3>
@@ -179,15 +176,23 @@
           </div>
         </article>
         <!-- wifi service -->
-        <article class="services__item ">
+        <article class="services__item" id="wifi" data-aos="fade-left" data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
           <div class="services__item__left">
             <h3 class="subtitle is-italic">
               Brinda servicios de wifi
             </h3>
-            <p>
-              Icorpora iternet de alta velocidad en tu negocio
-              y controla las personas que ingresan a tu red
-            </p>
+            <ul>
+              <li>
+                Configuracion de portal cautivo, para vender wifi por fichas, por horas, dias, o Megabits. en tiempo
+                corrido, pausado e ilimitado
+              </li>
+              <li>
+                Elaboración de plantillas de inicio del hotspot. con el logo del negocio
+                del cliente.
+              </li>
+            </ul>
+
 
             <button class="is-primary button">
               Contactar
@@ -198,7 +203,8 @@
           </div>
         </article>
         <!-- Intalation -->
-        <article class="services__item ">
+        <article class="services__item" id="satellite" data-aos="fade-right" data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
           <div class="services__item__right">
             <img src="./src/asssets/img/satellite.png" alt="">
           </div>
@@ -219,9 +225,9 @@
 
       </div>
       <!-- Web design -->
-      <article class="services__web">
+      <article class="services__web" id="web_design">
         <div class="container">
-          <div class="services__web__content">
+          <div class="services__web__content" data-aos="zoom-in-down">
             <h2>
               Digitaliza tu negocio
             </h2>
@@ -254,7 +260,7 @@
 
 
   <!-- footer -->
-  <footer class="footer hide">
+  <footer class="footer">
     <div class="container">
       <div class="footer__logo">
         <img width="100" src="./src/asssets/img/log.png" alt="">

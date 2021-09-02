@@ -7,13 +7,17 @@
     "serve": "vite preview"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.4",
     "@types/glidejs__glide": "^3.4.1",
+    "@types/smooth-scroll": "^16.1.1",
     "sass": "^1.38.1",
     "typescript": "^4.3.2",
     "vite": "^2.5.1"
   },
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
-    "bulma": "^0.9.3"
+    "aos": "^2.3.4",
+    "bulma": "^0.9.3",
+    "smooth-scroll": "^16.1.3"
   }
 }

@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/svg+xml+x-icon" href="./log.ico" />
+    <title>Chokim</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap" rel="stylesheet">
@@ -14,31 +15,39 @@
 <body>
     <!-- hero -->
     <header class="header">
-        <!-- navbar -->
         <nav class="navbar">
             <!-- logo -->
-            <div class="container">
-                <a href="/" class="navbar__logo">
+            <div class="container navbar__container">
+                <a href="" class="navbar__logo">
                     <img width="90" src="./src/asssets/img/log.png" alt="">
                 </a>
+                <!-- Burguer button: visible in mobile -->
+                <button class="button navbar__burguer">
+                    <i class="fas fa-bars"></i>
+                </button>
                 <ul class="navbar__menu">
-                    <li>
-                        <a href="">
-                            Inicio
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            Sobre nosotros
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            Servicios
-                        </a>
-                    </li>
+                    <!--Close button: visible in mobile  -->
+                    <div class="navbar__menu__box">
+                        <button class="navbar__menu__close">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <li>
+                            <a href="./">
+                                Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a data-scroll href="./#about">
+                                Sobre nosotros
+                            </a>
+                        </li>
+                        <li>
+                            <a data-scroll href="./#services">
+                                Servicios
+                            </a>
+                        </li>
+                    </div>
                 </ul>
-
             </div>
         </nav>
         <div class="header__hero">

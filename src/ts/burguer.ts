@@ -26,9 +26,9 @@ export const burguerMenuFeature = () => {
   window.addEventListener("resize", () => {
     translateMenu();
   });
-
   $trigger?.addEventListener("click", () => {
     $menu?.classList.toggle("open");
+    document.body.style.overflowY = "hidden";
   });
   $triggerClose?.addEventListener("click", () => {
     $menu?.classList.toggle("open");

@@ -99,6 +99,7 @@
     @include layout-bp(lt-sm) {
       display: initial;
     }
+
     &__box {
       display: flex;
       flex-direction: row;
@@ -182,10 +183,12 @@
     background: $white;
     position: fixed;
     top: 5px;
+    transition: all 0.2s;
     width: 100%;
     padding: 10px 0;
     margin: 0 auto;
     max-height: 20px;
+    min-height: 100px;
     &__logo {
       @include layout-bp(lt-sm) {
         img {
@@ -287,6 +290,7 @@
       align-items: center;
       flex-direction: column;
       transition: transform 0.2s ease;
+
       &:hover {
         background: $primary;
         transform: scale(1.1) translateY(-10px);
@@ -318,6 +322,11 @@
     display: block;
     margin: 8px 0;
   }
+  @include layout-bp(lt-sm) {
+    > * {
+      max-width: 500px;
+    }
+  }
 }
 
 .services {
@@ -331,9 +340,19 @@
     margin-bottom: 35px;
     padding: 45px 0;
     display: flex;
+    ul {
+      list-style: circle;
+    }
     justify-content: center;
     flex-direction: row;
     align-items: center;
+    @include layout-bp(lt-sm) {
+      flex-direction: column;
+      .services__item__left {
+        text-align: center;
+        order: 1;
+      }
+    }
     > * {
       margin: 0 20px;
     }
@@ -363,8 +382,12 @@
     padding: 40px 0;
     align-items: center;
   }
+
   &__logo {
     margin: 0 50px;
+    @include layout-bp(lt-sm) {
+      display: none;
+    }
   }
   &__content {
     padding: 90px 0;
@@ -399,9 +422,17 @@
 
 .footer {
   padding: 30px 0;
+  @include layout-bp(lt-sm) {
+    padding: 15px 0 !important;
+  }
   .container {
     display: flex;
     justify-content: space-between;
+    @include layout-bp(lt-sm) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
   @include layout-bp(lt-md) {
     padding: 30px 50px;
@@ -412,6 +443,9 @@
       @extend .subtitle;
       font-size: 2rem;
       font-style: italic;
+    }
+    @include layout-bp(lt-sm) {
+      text-align: center;
     }
   }
   &__copy {
