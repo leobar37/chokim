@@ -29,28 +29,37 @@
     <!-- navbar -->
     <nav class="navbar">
       <!-- logo -->
-      <div class="container">
+      <div class="container navbar__container">
         <a href="" class="navbar__logo">
           <img width="90" src="./src/asssets/img/log.png" alt="">
         </a>
+        <!-- Burguer button: visible in mobile -->
+        <button class="button navbar__burguer">
+          <i class="fas fa-bars"></i>
+        </button>
         <ul class="navbar__menu">
-          <li>
-            <a href="">
-              Inicio
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Sobre nosotros
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Servicios
-            </a>
-          </li>
+          <!--Close button: visible in mobile  -->
+          <div class="navbar__menu__box">
+            <button class="navbar__menu__close">
+              <i class="fas fa-times"></i>
+            </button>
+            <li>
+              <a href="">
+                Inicio
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Sobre nosotros
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Servicios
+              </a>
+            </li>
+          </div>
         </ul>
-
       </div>
     </nav>
     <div class="header__hero">
@@ -78,7 +87,7 @@
       </div>
     </div>
   </header>
-  <main>
+  <main class="hide">
     <!-- services resume -->
     <section class="container">
       <div class="services_resume">
@@ -245,7 +254,7 @@
 
 
   <!-- footer -->
-  <footer class="footer">
+  <footer class="footer hide">
     <div class="container">
       <div class="footer__logo">
         <img width="100" src="./src/asssets/img/log.png" alt="">
