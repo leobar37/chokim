@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/assets/index.3091f934.js"></script>
+  <script type="module" crossorigin src="/assets/index.98630508.js"></script>
     <link rel="modulepreload" href="/assets/vendor.432a09d5.js">
-    <link rel="stylesheet" href="/assets/index.37868da1.css">
+    <link rel="stylesheet" href="/assets/index.c7ee8e5c.css">
   </head>
 
 <body>
@@ -32,28 +32,37 @@
     <!-- navbar -->
     <nav class="navbar">
       <!-- logo -->
-      <div class="container">
+      <div class="container navbar__container">
         <a href="" class="navbar__logo">
           <img width="90" src="/assets/log.195e5fc8.png" alt="">
         </a>
+        <!-- Burguer button: visible in mobile -->
+        <button class="button navbar__burguer">
+          <i class="fas fa-bars"></i>
+        </button>
         <ul class="navbar__menu">
-          <li>
-            <a href="">
-              Inicio
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Sobre nosotros
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Servicios
-            </a>
-          </li>
+          <!--Close button: visible in mobile  -->
+          <div class="navbar__menu__box">
+            <button class="navbar__menu__close">
+              <i class="fas fa-times"></i>
+            </button>
+            <li>
+              <a href="">
+                Inicio
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Sobre nosotros
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Servicios
+              </a>
+            </li>
+          </div>
         </ul>
-
       </div>
     </nav>
     <div class="header__hero">
@@ -81,7 +90,7 @@
       </div>
     </div>
   </header>
-  <main>
+  <main class="hide">
     <!-- services resume -->
     <section class="container">
       <div class="services_resume">
@@ -248,7 +257,7 @@
 
 
   <!-- footer -->
-  <footer class="footer">
+  <footer class="footer hide">
     <div class="container">
       <div class="footer__logo">
         <img width="100" src="/assets/log.195e5fc8.png" alt="">
