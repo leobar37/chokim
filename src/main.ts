@@ -27,7 +27,6 @@ if (isPrincipal) {
   new Glide(".glide", {
     perView: 3,
     type: "slider",
-    focusAt: 1,
     gap: 10,
     bound: true,
     breakpoints: {

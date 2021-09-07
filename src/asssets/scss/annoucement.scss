@@ -51,6 +51,9 @@ body {
   align-items: center;
   max-width: 750px;
   text-align: center;
+  &__image {
+    width: 480px;
+  }
 
   @include layout-bp(lt-md) {
     max-width: 600px;
@@ -83,7 +86,7 @@ body {
   }
 
   &__title {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-family: $header-font;
     line-height: 3.7rem;
   }
